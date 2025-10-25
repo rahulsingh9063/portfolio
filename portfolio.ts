@@ -240,7 +240,7 @@ export const seoData: SEODataType = {
   description: greetings.description,
   author: "Rahul Singh",
   image: "https://avatars.githubusercontent.com/u/59178380?v=4",
-  url: "https://developer-portfolio-1hanzla100.vercel.app",
+  url: "https://rahulsingh-seven.vercel.app/",
   keywords: [
     "Rahul",
     "@rahulsingh9063",
