@@ -7,29 +7,31 @@ import {
   SkillsSectionType,
   SkillBarsType,
   SEODataType,
+  CertificationType,
   SocialLinksType,
   GreetingsType,
 } from "./types/sections";
 
 export const greetings: GreetingsType = {
-  name: "Hanzla Tauqeer",
-  title: "Hi all, I'm Hanzla",
-  description:
-    "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.",
-  resumeLink: "#",
+  name: "Rahul Singh",
+  title: "Hi all, I'm Rahul",
+  description: `I'm a passionate Mobile and Full Stack Developer with hands-on experience in building Native Android applications using Kotlin and cross-platform apps with React Native. I also develop modern web applications using technologies like React.js, Node.js, and various databases (SQL & NoSQL).
+
+I’m deeply interested in exploring new technologies and integrating them into real-world projects. As a self-motivated and hardworking developer, I enjoy collaborating in teams, learning continuously, and delivering efficient, user-focused solutions across mobile and web platforms.`,
+  resumeLink: "https://drive.google.com/file/d/1KDVn3tcXKbY134yELhhJEYJjYmL9OHQw/view?usp=drive_link",
 };
 
 export const openSource = {
-  githubUserName: "1hanzla100",
+  githubUserName: "rahulsingh9063", // Change this to your github username to view your profile in Contact Section.
 };
 
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  email: "mailto:hanzla.tauqeer123@gmail.com",
-  linkedin: "https://www.linkedin.com/in/1hanzla100/",
-  github: "https://github.com/1hanzla100",
-  instagram: "https://www.instagram.com/__hanzla100",
+  email: "mailto:rjsingh9063@gmail.com",
+  linkedin: "https://www.linkedin.com/in/rahul-singh-367405236/",
+  github: "https://github.com/rahulsingh9063",
+  instagram: "https://www.instagram.com/it.rahuls/",
   // facebook: 'https://www.facebook.com/1hanzla100',
   // twitter: 'https://twitter.com/1hanzla100',
 };
@@ -39,51 +41,56 @@ export const skillsSection: SkillsSectionType = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   data: [
     {
-      title: "Full Stack Development",
+      title: "Full Stack Mobile Application Development",
       lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
       skills: [
-        emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
-        emoji("⚡ Building responsive static websites using Next.js"),
-        emoji("⚡ Building RESTful APIs in Django & Django REST Framework"),
+        emoji("⚡ Developing high-performance Native Android apps using Kotlin & Java"),
+        emoji("⚡ Building cross-platform mobile applications using React Native"),
+        emoji("⚡ Creating responsive and dynamic web applications using React.js"),
+        emoji("⚡ Building RESTful APIs and backend services with Node.js and Express"),
+        emoji("⚡ Integrating Firebase and cloud databases for real-time data sync"),
+        emoji("⚡ Managing local and remote storage using SQLite, RoomDB, and MongoDB"),
       ],
+
       softwareSkills: [
-        {
-          skillName: "Python",
-          iconifyTag: "logos:python",
-        },
-        {
-          skillName: "Django",
-          iconifyTag: "vscode-icons:file-type-django",
-        },
-        {
-          skillName: "JavaScript",
-          iconifyTag: "logos:javascript",
-        },
-        {
-          skillName: "Reactjs",
-          iconifyTag: "vscode-icons:file-type-reactjs",
-        },
-        {
-          skillName: "Nextjs",
-          iconifyTag: "vscode-icons:file-type-light-next",
-        },
-        {
-          skillName: "AWS",
-          iconifyTag: "logos:aws",
-        },
-        {
-          skillName: "Heroku",
-          iconifyTag: "logos:heroku-icon",
-        },
-        {
-          skillName: "Github",
-          iconifyTag: "akar-icons:github-fill",
-        },
-        {
-          skillName: "Docker",
-          iconifyTag: "logos:docker-icon",
-        },
+        { skillName: "C", iconifyTag: "vscode-icons:file-type-c" },
+        // { skillName: "C++", iconifyTag: "vscode-icons:file-type-cpp" },
+        { skillName: "Python", iconifyTag: "logos:python" },
+        { skillName: "Java", iconifyTag: "logos:java" },
+        { skillName: "Kotlin", iconifyTag: "logos:kotlin" },
+        { skillName: "JavaScript", iconifyTag: "logos:javascript" },
+        { skillName: "TypeScript", iconifyTag: "logos:typescript-icon" },
+        // { skillName: "React.js", iconifyTag: "vscode-icons:file-type-reactjs" },
+        { skillName: "React Native", iconifyTag: "logos:react" },
+        // { skillName: "Next.js", iconifyTag: "vscode-icons:file-type-light-next" },
+        // { skillName: "Node.js", iconifyTag: "logos:nodejs-icon" },
+        { skillName: "Express", iconifyTag: "simple-icons:express" },
+        { skillName: "Tailwind CSS", iconifyTag: "vscode-icons:file-type-tailwind" },
+        { skillName: "Firebase", iconifyTag: "logos:firebase" },
+        // { skillName: "Firestore", iconifyTag: "logos:google-cloud-firestore" },
+        { skillName: "MongoDB", iconifyTag: "vscode-icons:file-type-mongo" },
+        { skillName: "MySQL", iconifyTag: "logos:mysql-icon" },
+        { skillName: "RoomDB", iconifyTag: "material-symbols:database" },
+        { skillName: "SQLite", iconifyTag: "vscode-icons:file-type-sqlite" },
+        { skillName: "Docker", iconifyTag: "logos:docker-icon" },
+        { skillName: "Git", iconifyTag: "logos:git-icon" },
+        { skillName: "GitHub", iconifyTag: "akar-icons:github-fill" },
+        { skillName: "Vercel", iconifyTag: "logos:vercel-icon" },
+        // { skillName: "Android Studio", iconifyTag: "logos:android-studio" },
+        { skillName: "IntelliJ IDEA", iconifyTag: "logos:intellij-idea" },
+        { skillName: "VS Code", iconifyTag: "logos:visual-studio-code" },
+        { skillName: "Redux", iconifyTag: "logos:redux" },
+        { skillName: "Axios", iconifyTag: "simple-icons:axios" },
+        // { skillName: "Retrofit", iconifyTag: "simple-icons:retrofit" },
+        { skillName: "Volley", iconifyTag: "mdi:network" },
+        { skillName: "React Navigation", iconifyTag: "logos:react" },
+        { skillName: "Expo CLI", iconifyTag: "logos:expo-icon" },
+        { skillName: "GitHub Actions", iconifyTag: "logos:github-actions" },
+        { skillName: "Problem Solving", iconifyTag: "mdi:lightbulb-on-outline" },
+        { skillName: "Communication", iconifyTag: "mdi:account-voice" },
+        { skillName: "Time Management", iconifyTag: "mdi:clock-outline" },
       ],
+
     },
   ],
 };
@@ -104,72 +111,78 @@ export const SkillBars: SkillBarsType[] = [
 ];
 
 export const educationInfo: EducationType[] = [
+
   {
-    schoolName: "University of Central Punjab",
-    subHeader: "Bachelor of Science in Computer Science",
-    duration: "September 2017 - April 2020",
-    desc: "",
-    grade: "Grade A",
-    descBullets: [], // Array of Strings
+    "schoolName": "Punjab Technical University, Jalandhar",
+    "subHeader": "B.Tech in Computer Science and Engineering",
+    "duration": "2022 – Present",
+    "desc": "",
+    "grade": "CGPA: 8.32/10.0",
+    "descBullets": []
   },
-];
+  {
+    "schoolName": "Uttar Pradesh State Board",
+    "subHeader": "Class 12th",
+    "duration": "2020",
+    "desc": "",
+    "grade": "77%",
+    "descBullets": []
+  },
+  {
+    "schoolName": "CBSE Board",
+    "subHeader": "Class 10th",
+    "duration": "2018",
+    "desc": "",
+    "grade": "78%",
+    "descBullets": []
+  }
+]
+  ;
 
 export const experience: ExperienceType[] = [
+
   {
-    role: "Django Developer",
-    company: "Meganos Software",
-    companyLogo: "/img/icons/common/meganos.png",
-    date: "Aug 2022 - Present",
-    desc: "I crafted backends for diverse web apps, APIs, and WebSockets in e-commerce, podcasts, and property management. Managed server upkeep, deployments on Linux, Heroku, and AWS S3. Implemented PyTest for automated unit and integration testing, slashing 4 hours of manual testing each sprint, fortifying a dependable and flawless code foundation.",
-  },
-  {
-    role: "Full Stack Developer",
-    company: "Duseca Software",
-    companyLogo: "/img/icons/common/duseca_software_logo.jpeg",
-    date: "Jan 2022 - Sept 2023",
-    desc: "Crafted robust mobile application backends employing Django, Python, and REST APIs. Leveraged Django REST Framework, PostgreSQL, AWS, Firebase, Stripe, and WebSocket for efficient development. Collaborated across teams to surpass client expectations. Designed intuitive UIs, empowering clients to effortlessly manage their applications with a visually captivating interface.",
+    role: "Frontend Developer",
+    company: "Hoping Minds",
+    companyLogo: "/img/icons/common/Asset-5.png",
+    date: "Jun 2024 - July 2024",
+    desc: "Designed and deployed a cross-platform blog app using React Native (Android/iOS), and real-time authentication.Engineered scalable REST APIs in Node.js with MongoDB, reducing query latency to sub-200ms.Implemented Agile methodology with GitHub for version control and CI/CD pipelines, accelerating deployment by 20%.",
     // descBullets: [
     // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
     // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     // ],
   },
-  {
-    role: "Full Stack Developer",
-    company: "ZRTechnologies",
-    companyLogo: "/img/icons/common/zrtech.jpeg",
-    date: "Aug 2022 - Jun 2023",
-    desc: "Crafting diverse web applications, I've elevated functionality and user engagement. Spearheaded Visual Portfolio, leveraging AI for captivating presentations from parsed text. Proficiently set up and optimized applications on Linux servers, guaranteeing smooth scalability and top-notch performance for seamless user experiences.",
-  },
-  {
-    role: "Backend Developer",
-    company: "Bleed-AI",
-    companyLogo: "/img/icons/common/bleedAI.jpg",
-    date: "Sept 2021 - Oct 2021",
-    desc: "As a Django developer at Bleed AI, I integrated a computer vision AI model to process YouTube URLs on a website. I used Django Channels and Websockets to show real-time processing and implemented threading to run multiple instances of the AI model. I also used jQuery for UI rendering and deployed the website on a Heroku server.",
-  },
+
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: "developer-portfolio",
-    desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-    github: "https://github.com/1hanzla100/developer-portfolio",
-    link: "https://developer-portfolio-1hanzla100.vercel.app/",
+    name: "Fingaurd (Financial Learning & Simulation Platform)",
+    desc: "Developed a finance-learning app with 8+ calculators (EMI, SIP, Loan, Investment) and an AI chatbot using FastAPI.Integrated push notifications and fraud alerting with Firebase and JWT-secured Node.js backend.",
+    github: "https://github.com/rohan2107-lab/FinGuard",
+    // link: "https://developer-portfolio-1hanzla100.vercel.app/",
+    image: "/img/icons/common/finance.svg",
   },
   {
-    name: "Giebo",
-    desc: "A Podcast Platform where creators can easily publish and sell their podcasts, and users can purchase with Handcash BitcoinSV, the future of fast and secure transactions.",
-    link: "https://gibeo.io/",
+    name: "TripGo (AI Powered trip planner application)",
+    desc: " Built AI-powered trip planner that auto-generates itineraries, boosting user planning efficiency by 45%.Integrated Google Places API and real-time trip visualization, increasing engagement by 50%.",
+    github: "https://github.com/rahulsingh9063/TripGo",
+    // link: "https://gibeo.io/",
+    image: "/img/icons/common/travel.svg",
   },
   {
-    name: "O Mejor Oferta",
-    desc: "O Mejor Oferta is a mobile marketplace for buying and selling items nearby, helping users find deals on things they want and make money from items they no longer need.",
-    link: "https://play.google.com/store/apps/details?id=com.duseca.mejor_oferta",
+    name: "Blogging App",
+    desc: "Rich text editor with real-time preview and auto-save functionality, improving content creation efficiency by 45%. Integrated SEO optimization tools with keyword suggestions, increasing blog visibility by 50%.",
+    github: "https://github.com/rahulsingh9063/LetShare",
+    // link: "https://play.google.com/store/apps/details?id=com.duseca.mejor_oferta",
+    image: "/img/icons/common/blog.svg",
   },
   {
-    name: "Hooligan Culture",
-    desc: "A Ecommerce Platform, where shopping meets the future! With HandCash BitcoinSV integration, you can authenticate and purchase products with ease and confidence.",
-    link: "https://hooliganculture.com/",
+    name: "Expense Manager App",
+    desc: " Automated expense tracking and categorization, improving user financial awareness by 40%.Integrated budgeting features with alerts, reducing overspending by 35%",
+    github: "https://github.com/rahulsingh9063/eManager",
+    // link: "https://hooliganculture.com/",
+    image: "/img/icons/common/expense.svg",
   },
 ];
 
@@ -194,20 +207,64 @@ export const feedbacks: FeedbackType[] = [
   },
 ];
 
+export const certifications: CertificationType[] = [
+  {
+    title: "Hackathon Winner - CT Group of Institutions 2025",
+    issuer: "Hackathon Organizer",
+    date: "2025",
+    description: "Won 1st place best UI/UX in a hackathon organized by CT Group of Institutions.",
+    image: "/img/icons/common/ct.jpg",
+    link: "https://drive.google.com/file/d/1TSZPdhnAcmjRo4K1PG3u8xvN1-5Ap0RH/view?usp=drive_link",
+  },
+  {
+    title: " Cisco Certified Introduction to Data Science",
+    issuer: "Cisco",
+    date: "2025",
+    description: "Fundamentals of data science.",
+    image: "/img/icons/common/cisco.png",
+    link: "https://www.netacad.com/certificates?issuanceId=f06e934e-db51-420c-bb76-c8e65f144a28",
+  },
+  {
+    title: "Master Android App Development– Udemy (Denis Panjuta)",
+    issuer: "Udemy",
+    date: "2024",
+    description: "Built multiple  mobile apps using Java & Kotlin.",
+    image: "/img/icons/common/udemy.png",
+    link: "https://www.udemy.com/certificate/UC-4c832ba9-cd5b-48c6-8277-df37a128a303/",
+  },
+];
+
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: "Hanzla Tauqeer",
+  title: "Rahul Singh",
   description: greetings.description,
-  author: "Hanzla Tauqeer",
+  author: "Rahul Singh",
   image: "https://avatars.githubusercontent.com/u/59178380?v=4",
   url: "https://developer-portfolio-1hanzla100.vercel.app",
   keywords: [
-    "Hanzla",
-    "Hanzla Tauqeer",
-    "@1hanzla100",
-    "1hanzla100",
+    "Rahul",
+    "@rahulsingh9063",
+    "rahulsingh9063",
     "Portfolio",
-    "Hanzla Portfolio ",
-    "Hanzla Tauqeer Portfolio",
+    "Rahul Singh Portfolio",
+    "Rahul Portfolio",
+    "software developer portfolio",
+    "full stack developer portfolio",
+    "mobile developer portfolio",
+    "android developer portfolio",
+    "react native developer portfolio",
+    "kotlin developer portfolio",
+    "nodejs developer portfolio",
+    "express developer portfolio",
+    "reactjs developer portfolio",
+    "software developer ",
+    "full stack developer ",
+    "mobile developer ",
+    "android developer ",
+    "react native developer ",
+    "kotlin developer ",
+    "nodejs developer ",
+    "express developer ",
+    "reactjs developer ",
   ],
-};
+};           

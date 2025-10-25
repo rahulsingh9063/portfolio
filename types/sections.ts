@@ -78,6 +78,7 @@ export type ProjectType = {
   desc: string;
   github?: string;
   link?: string;
+  image?: string; // local path under /public or external URL
 };
 
 // * FEEDBACK SECTION
@@ -86,4 +87,15 @@ export type FeedbackType = {
   name: string;
   role: string;
   feedback: string;
+};
+
+// * CERTIFICATIONS / ACHIEVEMENTS SECTION
+
+export type CertificationType = {
+  title: string;
+  issuer?: string;
+  date?: string;
+  description?: string;
+  image?: string; // path under /public or external URL
+  link?: string;
 };

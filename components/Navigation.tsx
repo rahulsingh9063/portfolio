@@ -13,7 +13,25 @@ const Navigation = () => {
     let headroom = new Headroom(document.getElementById("navbar-main")!);
     // initialise
     headroom.init();
+    // apply persisted theme
+    const saved = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
+    if (saved === "dark") document.documentElement.classList.add("dark-mode");
   });
+
+  const [isDark, setIsDark] = useState<boolean>(typeof window !== "undefined" && document.documentElement.classList.contains("dark-mode"));
+
+  const toggleTheme = () => {
+    const el = document.documentElement;
+    if (el.classList.contains("dark-mode")) {
+      el.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+      setIsDark(false);
+    } else {
+      el.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+      setIsDark(true);
+    }
+  };
 
   return (
     <>
@@ -51,6 +69,12 @@ const Navigation = () => {
                 </Row>
               </div>
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                <NavItem>
+                  <NavLink className="nav-link-icon" onClick={toggleTheme} role="button" aria-label="Toggle theme">
+                    <i className={isDark ? "fa fa-sun-o" : "fa fa-moon-o"} />
+                    <span className="nav-link-inner--text d-lg-none ml-2">Theme</span>
+                  </NavLink>
+                </NavItem>
                 {socialLinks.facebook && (
                   <NavItem>
                     <NavLink

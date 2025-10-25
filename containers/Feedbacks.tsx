@@ -1,7 +1,8 @@
-import { feedbacks } from "../portfolio";
+import { feedbacks, certifications } from "../portfolio";
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import FeedbackCard from "../components/FeedbackCard";
+import CertificationCard from "../components/CertificationCard";
 import Fade from "react-reveal/Fade";
 
 const Feedbacks = () => {
@@ -17,18 +18,18 @@ const Feedbacks = () => {
                 </div>
               </div>
               <div className="pl-4">
-                <h4 className="display-3 text-info">Our Clients Feedback</h4>
+                <h4 className="display-3 text-info">Achievements & Certifications</h4>
               </div>
             </div>
-            <Row className="g-3">
-              {feedbacks.map((data, i) => {
-                return (
-                  <Col key={i} lg={6}>
-                    <FeedbackCard {...data} />
+            {certifications && (
+              <Row className="g-3">
+                {certifications.map((data, i) => (
+                  <Col key={i} lg={4}>
+                    <CertificationCard {...data} />
                   </Col>
-                );
-              })}
-            </Row>
+                ))}
+              </Row>
+            )}
           </Container>
         </section>
       </Fade>

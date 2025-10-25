@@ -9,10 +9,16 @@ const SocialLinks = () => {
         <Button
           className="btn-icon-only rounded-circle ml-1"
           color="white"
-          rel="noopener"
-          aria-label="URL"
-          href={socialLinks.url}
-          target="_blank"
+          aria-label="Email"
+          href={socialLinks.email}
+          onClick={() => {
+            // fallback to ensure mail client opens
+            try {
+              window.location.href = socialLinks.email;
+            } catch (e) {
+              /* no-op on SSR or if blocked */
+            }
+          }}
         >
           <span className="btn-inner--icon">
             <i className="fa fa-envelope" />
